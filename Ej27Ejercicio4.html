@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+   
+    <form>
+        <p>Node JS pertenece a:</p>
+        <p><select id="pregunta1">
+                <option value="1">JavaScript</option>
+                <option value="2">Java</option>
+                <option value="3">HTML</option>
+                <option value="4">CSS</option>
+            </select></p>
+        <p><input type="button" value="Controlar" onClick="verificar()"></p>
+    </form>
+
+    <script>
+         /*Confeccionar una página que permita tomar un examen múltiple choice.
+    Se debe mostrar una pregunta y seguidamente un objeto SELECT con las respuestas
+    posibles. Al presionar un botón mostrar la cantidad de respuestas correctas e
+    incorrectas (Disponer 4 preguntas y sus respectivos controles SELECT)*/
+
+        function verificar(){
+            let correctas=0;
+            let ele1 = document.getElementById('pregunta1');
+            if (ele1.options[ele1.selectedIndex].value == 1) {
+                correctas++;
+            }
+            alert('Cantidad de respuestas correctas:' + correctas);
+        }
+    </script>
+</body>
+
+</html>

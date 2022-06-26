@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>Escriba un numero: <input type="text" id="numero1" ></p>  
+        <p>Escriba otro numero: <input type="text" id="numero2"></p>
+        <p><input type="button" value="enviar" onclick="mayor()"></p>
+    </form>
+    <script>
+/*Cargar dos números en objetos de tipo text y al presionar un botón, 
+mostrar el mayor.*/        
+        function mayor(){
+            let valor1= parseInt(document.getElementById('numero1').value);
+            let valor2= parseInt(document.getElementById('numero2').value);
+
+            if(valor1>=valor2){
+                alert("El primer número, asociado al valor "+valor1+", es el mayor");
+            }else{
+                alert("El segundo número, asociado al valor "+valor2+", es el mayor");
+            }
+        }
+    </script>
+    
+</body>
+</html>

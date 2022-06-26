@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones con parámetros</title>
+</head>
+<body>
+    <script>
+        /*1 - Elaborar una función a la cual le enviemos tres enteros y 
+        muestre el menor.*/
+        function menor(num1,num2,num3){
+            document.write("<br>",num1);
+            
+            document.write("<br>",num2);
+            
+            document.write("<br>",num3,"</br>");
+            if(num1<num2 && num1<num3){
+                document.write("num1");
+                return num1;
+            }else if(num2<num1 && num2<num3){             
+                document.write("num2");
+                return num2;
+            }else if(num3<num1 && num3<num2){
+                document.write("num3");
+                return num3;
+            }
+        }
+        num1=prompt("Escriba un numero: ");
+        num2=prompt("Escriba un numero: ");
+        num3=prompt("Escriba un numero: ");
+        valorMenor= menor(num1,num2,num3);
+        document.write("El numero menor es: ",valorMenor);
+
+        
+    </script>
+</body>
+</html>

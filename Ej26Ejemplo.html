@@ -1,0 +1,20 @@
+<HTML>
+    <HEAD>
+    <SCRIPT LANGUAGE="JavaScript">
+    function validar()
+    {
+      if (document.form1.text1.value.length<5)
+      {
+        alert("Ingrese al menos 5 caracteres");
+        document.form1.text1.value="";
+      }
+    }
+    </SCRIPT>
+    </HEAD>
+    <BODY>
+    <FORM NAME="form1">
+    Ingrese clave(al menos 5 caracteres): <INPUT TYPE="password" NAME="text1">
+    <INPUT TYPE="button" ONCLICK="validar()" VALUE="Enviar">
+    </FORM>
+    </BODY>
+    </HTML>

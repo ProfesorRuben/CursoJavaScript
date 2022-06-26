@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>Escriba una palabra o frase: <input type="text" id="palabra1"></p>
+        <p>Escriba otra palabra o frase: <input type="text" id="palabra2"></p>
+        <p><input type="button" value="Concatenar" onclick="concatena()"></p>
+        <p><input type="text" id="resultado"></p>
+    </form>
+    <script>
+/*Cargar un nombre y un apellido en sendos text. Al presionar un botón, 
+concatenarlos y mostrarlos en un tercer text (Tener en cuenta que podemos 
+modificar la propiedad value de un objeto TEXT cuando ocurre un evento)*/
+        function concatena(){
+            let pal1=document.getElementById('palabra1').value;           
+            let pal2=document.getElementById('palabra2').value;
+            document.getElementById('resultado').value = pal1 + pal2;
+        }
+
+    
+    </script>
+</body>
+</html>

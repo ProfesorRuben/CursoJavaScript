@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*Ingresar una serie de nombres por teclado hasta que se cargue la palabra Fin,
+sin contemplar mayúsculas ni minúsculas. Es decir que para salir se pueda teclear fin, 
+Fin o FIN. Mostrar cuántos nombres se ingresaron.*/
+
+        let palabra="";
+        let contador=0;
+        while (palabra.toLowerCase()!='fin'){
+            palabra=prompt("Escribe una palabra");
+            contador++;
+        }
+
+        document.write("Se han escrito ",contador," nombres.");
+    </script>
+</body>
+</html>

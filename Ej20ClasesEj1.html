@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*Confeccionar un programa que muestre en que TRIMESTRE del año nos encontramos. 
+Para esto obtener el mes.*/
+        let fecha = new Date();
+        mes = fecha.getMonth();
+        if(mes>=1&&mes<=3){
+            document.write("Estamos en el 1º trimestre");
+        }else if(mes>=4&&mes<=6){
+            document.write("Estamos en el 2º trimestre");
+        }else if(mes>=7&&mes<=9){
+            document.write("Estamos en el 3º trimestre");
+        }else{
+            document.write("Estamos en el 4º trimestre");
+        }
+    </script>
+</body>
+</html>

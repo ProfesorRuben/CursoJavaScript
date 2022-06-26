@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+
+<body>
+    <script>
+        /*Realizar un programa que pida la carga de dos vectores numéricos. 
+        Obtener la suma de los dos vectores, dicho resultado guardarlo en un tercer 
+        vector del mismo tamaño. Sumar componente a componente.
+        El tamaño del vector es a elección.*/
+
+        function rellenaArrays(array1,array2){     
+            for(i=0;i<array1.length;i++){
+               valor= prompt("Escriba un valor:");
+               array1[i]=parseInt(valor);
+            }
+            for(i=0;i<array2.length;i++){
+               valor= prompt("Escriba un valor:");
+               array2[i]=parseInt(valor);
+            }
+        }
+        function muestraArrays(array1,array2){
+            document.write("Array 1: ");
+            for(i=0;i<array1.length;i++){
+                document.write(array1[i]," ");
+            }
+            document.write("</br>Array 2: ");
+            for(i=0;i<array2.length;i++){
+                document.write(array2[i]," ");
+            }
+
+        }
+
+     function guarda(array1,array2,array3){
+            for(i=0;i<array3.length;i++){
+                array3[i]=array1[i]+array2[i];
+            }
+           
+        
+
+          document.write("</br>El array 3 queda: ");
+            for(i=0;i<array3.length;i++){
+                document.write(array3[i]," "); 
+            }
+        }
+
+        
+        size = prompt("Escriba el tamaño para los vectores: ");
+        array1 = new Array(parseInt(size));
+        array2 = new Array(parseInt(size));
+        array3 = new Array(parseInt(size));
+
+        rellenaArrays(array1,array2);
+
+        muestraArrays(array1,array2);
+
+        guarda(array1,array2,array3);
+    </script>
+</body>
+
+</html>

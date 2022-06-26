@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Confeccionar un programa que permita cargar un valor comprendido entre 1 
+        y 10. Luego generar un valor aleatorio entre 1 y 10, mostrar un mensaje con 
+        el número sorteado e indicar si ganó o perdió:*/
+
+        function generaNumero(){
+            return parseInt(Math.random()*10+1);
+        }
+
+        azar= generaNumero();
+        document.write(azar);
+        num= prompt("Escriba un numero del 1 al 10 para el sorteo: ");
+        if(num==azar){
+            document.write("HAS GANADO!!!!");
+        }else{
+            document.write("Vaya, has perdido :(");
+        }
+
+    </script>
+</body>
+</html>

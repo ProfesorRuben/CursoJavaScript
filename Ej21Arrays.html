@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+/*Ejemplo 1: Crear un vector para almacenar los cinco sueldos de operarios y 
+luego mostrar el total de gastos en sueldos (cada actividad en una función)*/ 
+        
+    function addSueldos(sueldos){
+        for(i=0;i<sueldos.length;i++){
+            valor=prompt("Escriba el sueldo: ");
+            sueldos[i]=parseInt(valor);
+        }
+    }
+
+    function muestraSueldos(sueldos){
+        document.write("<br><br>Los sueldos con bucle for son:");
+        for (let index = 0; index < sueldos.length; index++) {
+            document.write("</br>"+sueldos[index]);
+        }
+    }
+
+    function muestraSueldosConFore(sueldos){
+        document.write("<br><br>Los sueldos con bucle for each son:");
+        sueldos.forEach(element => {
+            document.write("</br>"+element);
+        });
+    }
+    sueldos = new Array(5);
+    addSueldos(sueldos);
+    
+    document.write("El sueldo de la posición -1 es:"+sueldos[-1]);
+    document.write("</br>El sueldo de la posición 0 es:"+sueldos[0]);
+    
+    muestraSueldos(sueldos);
+    muestraSueldosConFore(sueldos);
+    </script>
+</body>
+</html>
